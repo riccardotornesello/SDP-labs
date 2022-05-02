@@ -29,6 +29,12 @@ int main(int argc, char *argv[])
     int n, i;
     char *vet;
 
+    if (argc != 2)
+    {
+        fprintf(stderr, "One argument required\n");
+        return -1;
+    }
+
     n = atoi(argv[1]);
 
     vet = (char *)malloc(n * (sizeof(int) + 1));

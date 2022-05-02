@@ -29,7 +29,8 @@ int main(int argc, char **argv)
 
     if (argc != 3)
     {
-        fprintf(stderr, "Two arguments required");
+        fprintf(stderr, "Two arguments required\n");
+        return -1;
     }
 
     n = atoi(argv[1]);
